@@ -1,0 +1,168 @@
+:root {
+  --texto: #e9ecef; 
+  --primario: #ffcc66; 
+  --secundario: #78a1bb; 
+  --fondo-formulario: rgba(0, 0, 0, 0.75); 
+  --highlight: #66ff99; 
+  --borde: #444; 
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  
+  color: var(--texto);
+  overflow-y: auto; 
+}
+
+
+#videoFondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover; 
+  z-index: -1; 
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.85); 
+  padding: 1rem 2rem;
+  border-bottom: 2px solid var(--primario);
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: var(--primario);
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--texto);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--primario);
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  color: var(--primario);
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 8px;
+    display: none;
+  }
+
+  #menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 4rem;
+  min-height: 100vh;
+}
+
+.registro-container {
+  background-color: var(--fondo-formulario);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid var(--primario);
+  box-shadow: 0 0 15px var(--highlight);
+  max-width: 500px;
+  width: 90%;
+}
+
+.registro-container h1 {
+  text-align: center;
+  color: var(--primario);
+  margin-bottom: 1.5rem;
+}
+
+.registro-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registro-form label {
+  margin: 0.5rem 0 0.2rem;
+  font-weight: bold;
+  color: var(--primario);
+}
+
+.registro-form input,
+.registro-form select {
+  padding: 0.8rem;
+  background-color: #121212;
+  color: var(--texto);
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: border 0.3s;
+}
+
+.registro-form input:focus,
+.registro-form select:focus {
+  border-color: var(--highlight);
+  outline: none;
+  box-shadow: 0 0 8px var(--highlight);
+}
+
+.registro-form button {
+  background-color: var(--primario);
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.registro-form button:hover {
+  background-color: var(--highlight);
+  transform: scale(1.05);
+}
+  
+
+  

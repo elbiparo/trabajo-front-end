@@ -1,0 +1,156 @@
+:root {
+    --texto: #e9ecef;
+    --primario: #8a2be2;
+    --secundario: #4682b4;
+    --fondo-formulario: rgba(47, 47, 47, 0.85);
+    --highlight: #ff00ff;
+    --borde: #333;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--texto);
+    overflow-y: auto;
+  }
+  
+  #videoWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  #videoWrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(18, 18, 18, 0.85);
+    backdrop-filter: blur(8px);
+    border-bottom: 2px solid var(--primario);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    color: var(--highlight);
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+  }
+  
+  .nav-links li a {
+    color: var(--texto);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: var(--primario);
+  }
+  
+  .hamburguesa {
+    display: none;
+    font-size: 2rem;
+    color: var(--primario);
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      background-color: rgba(47, 47, 47, 0.95);
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 200px;
+      padding: 1rem;
+      border-radius: 8px;
+      display: none;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .hamburguesa {
+      display: block;
+    }
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .bienvenida {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .bienvenida h1 {
+    color: var(--primario);
+    text-shadow: 0 0 6px var(--highlight);
+  }
+  
+  .bienvenida p {
+    color: #ccc;
+  }
+  
+  .acciones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .card {
+    background-color: var(--fondo-formulario);
+    border: 2px solid var(--secundario);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 0 12px var(--primario);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px var(--highlight);
+  }
+  
+  .card button {
+    background-color: var(--primario);
+    color: var(--texto);
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .card button:hover {
+    background-color: var(--highlight);
+    color: #fff;
+  }

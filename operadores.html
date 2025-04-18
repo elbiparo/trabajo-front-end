@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel Operador | Calamity Parking</title>
+  <link rel="stylesheet" href="css/operadores.css" />
+</head>
+<body>
+  <div id="videoWrapper">
+    <video autoplay muted loop>
+      <source src="video/operadores.mp4" type="video/mp4" />
+      Tu navegador no soporta video HTML5.
+    </video>
+  </div>
+
+  <header class="header">
+    <div class="logo">Calamity Parking</div>
+    <nav class="nav">
+      <label for="menu-toggle" class="hamburguesa">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Gestionar perfil</a></li>
+        <li><a href="manual de uso.html">manual de uso</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bienvenida">
+      <h1>Bienvenido, Operador</h1>
+      <p>Desde aquí puedes gestionar el estado de las celdas, revisar reservas activas y generar reportes básicos.</p>
+    </section>
+
+    <section class="acciones">
+      <div class="card">
+        <h2>Revisar reservas</h2>
+        <p>Consulta las reservas activas y próximas para una mejor organización del parqueadero.</p>
+        <button>Ver reservas</button>
+      </div>
+      <div class="card">
+        <h2>Celdas ocupadas</h2>
+        <p>Visualiza rápidamente qué celdas están en uso y cuáles están disponibles.</p>
+        <button>Ver celdas</button>
+      </div>
+      <div class="card">
+        <h2>Generar reporte</h2>
+        <p>Crea un informe básico de actividad diaria del parqueadero.</p>
+        <button>Generar</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/operados.js"></script>
+</body>
+</html>

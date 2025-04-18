@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iniciar Sesión</title>
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+
+  <video autoplay muted loop id="videoFondo">
+    <source src="video/fondo login.mp4" type="video/mp4" />
+    Tu navegador no soporta video HTML5.
+  </video>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">Calamity Parking</div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="registro.html">Registro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="form-container">
+    <h1>Iniciar Sesión</h1>
+    <form>
+      <label for="correo">Correo electrónico</label>
+      <input type="email" id="correo" required placeholder="ejemplo@correo.com" />
+
+      <label for="contrasena">Contraseña</label>
+      <input type="password" id="contrasena" required placeholder="Tu contraseña" />
+
+      <button type="submit">Entrar</button>
+    </form>
+    <div class="forgot-password">
+      <a href="recuperar.html">¿Olvidaste tu contraseña?</a>
+    </div>
+  </div>
+</body>
+</html>

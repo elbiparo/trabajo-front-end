@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panel administrador</title>
+  <link rel="stylesheet" href="css/administradores.css" />
+</head>
+<body>
+
+
+  <video autoplay muted loop id="bg-video">
+    <source src="video/administradores.mp4" type="video/mp4" />
+    Tu navegador no soporta el video.
+  </video>
+
+  
+  <header>
+    <h1>Calamity admin</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">inicio</a></li>
+        <li><a href="manual de uso.html">Usuarios</a></li>
+        <li><a href="manual de uso.html">Vehículos</a></li>
+        <li><a href="manual de uso.html">Celdas</a></li>
+        <li><a href="manual de uso.html">Cerrar Sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <div class="content">
+
+    <section class="create-user">
+      <h2>Crear Usuario</h2>
+      <form>
+        <input type="text" placeholder="Nombre completo" required />
+        <input type="text" placeholder="Tipo de documento" required />
+        <input type="text" placeholder="Número de documento" required />
+        <input type="email" placeholder="Correo electrónico" required />
+        <input type="tel" placeholder="Número de celular" required />
+        <select>
+          <option value="administrador">Administrador</option>
+          <option value="operador">Operador</option>
+          <option value="usuario">Usuario</option>
+        </select>
+        <button type="submit">Registrar</button>
+      </form>
+    </section>
+
+    <section class="manage-vehicles">
+        <h2>Gestión de Vehículos</h2>
+        <p>Desde aquí puedes registrar o editar vehículos asignados.</p>
+        <button class="btn-dragon" onclick="location.href='manual de uso.html'">Registrar Vehículo</button>
+      </section>
+      
+      
+
+      <section class="manage-celdas">
+        <h2>Gestión de Celdas</h2>
+        <p>Visualiza y actualiza las celdas del parqueadero.</p>
+        <button class="btn-dragon" onclick="location.href='manual de uso.html'">Actualizar Celdas</button>
+      </section>
+      
+      
+
+  </div>
+
+  <script src="js/administradores.js"></script>
+</body>
+</html>

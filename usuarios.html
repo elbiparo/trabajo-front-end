@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calamity Parking - Usuario</title>
+  <link rel="stylesheet" href="css/usuarios.css" />
+  <script defer src="js/usuarios.js"></script>
+</head>
+<body>
+
+  <header class="hero">
+    <video autoplay muted loop id="bg-video">
+      <source src="video/usuarios.mp4" type="video/mp4">
+    </video>
+    <div class="overlay">
+      <nav class="navbar">
+        <div class="logo">Calamity Parking</div>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="manual de uso.html">Manual</a></li>
+        </ul>
+      </nav>
+
+     
+      <div class="hero-content">
+        <h1>Bienvenido a Calamity Parking</h1>
+        <p>Gestiona tus vehículos y verifica el espacio disponible</p>
+      </div>
+    </div>
+  </header>
+
+ 
+  <main class="tables-container">
+
+    <section class="card animate">
+      <h2>Vehículos Registrados</h2>
+      <div class="vehiculo">
+        <h3>Nissan GTR R35</h3>
+        <p>Placa: GTR-789</p>
+        <p>Color: Negro Mate</p>
+        <p>Tipo: Deportivo</p>
+      </div>
+      <div class="vehiculo">
+        <h3>Kawasaki Ninja ZX-10R</h3>
+        <p>Placa: NINJA-10</p>
+        <p>Color: Verde</p>
+        <p>Tipo: Moto</p>
+      </div>
+    </section>
+
+   
+    <section class="card animate">
+      <h2>Celdas Disponibles</h2>
+      <ul>
+        <li>Zona A - Nivel 1: 2 disponibles</li>
+        <li>Zona B - Nivel 1: 5 disponibles</li>
+        <li>Zona C - Subterráneo: 1 disponible</li>
+      </ul>
+    </section>
+  </main>
+
+  
+  <section class="user-info">
+    <h2>Información Personal</h2>
+    <table class="user-table">
+      <tr>
+        <th>Nombre</th>
+        <td><input type="text" value="Juan Pérez" /></td>
+      </tr>
+      <tr>
+        <th>Correo</th>
+        <td><input type="email" value="juan.perez@example.com" /></td>
+      </tr>
+      <tr>
+        <th>Teléfono</th>
+        <td><input type="text" value="123-456-7890" /></td>
+      </tr>
+      <tr>
+        <th>Numero de documento/th>
+        <td><input type="text" value="10127165471" /></td>
+      </tr>
+      <tr>
+        <th>Contraseña</th>
+        <td><input type="password" value="********" /></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button>Guardar Cambios</button></td>
+      </tr>
+    </table>
+  </section>
+
+</body>
+</html>
+
+
+

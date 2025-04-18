@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0a0f1c;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.3);
+}
+
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 60vh; 
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #00ffff;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #00ffff;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #00ffff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.nav-links li a:hover {
+  color: #1fb6ff;
+  transform: scale(1.1);
+}
+
+
+.hero-content {
+  text-align: center;
+  padding: 2rem 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.tables-container {
+  display: flex;
+  justify-content: center; 
+  gap: 1rem; 
+  padding: 2rem 0; 
+}
+
+
+.card {
+  flex: 1; 
+  max-width: 400px; 
+  background-color: #111827;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00ffff33;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.card.animate:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px #00ffff66;
+}
+
+.card h2 {
+  color: #00ffff;
+  margin-bottom: 1rem;
+}
+
+.vehiculo {
+  margin-bottom: 1.5rem;
+}
+.vehiculo h3 {
+  margin: 0;
+  color: #1fb6ff;
+}
+
+
+.user-info {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.user-table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #111827;
+  box-shadow: 0 0 20px #00ffff33;
+}
+
+.user-table th, .user-table td {
+  padding: 1rem;
+  border: 1px solid #00ffff;
+  text-align: left;
+}
+
+.user-table input {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.user-table button {
+  padding: 0.7rem 1.5rem;
+  background-color: #00ffff;
+  color: #111827;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.user-table button:hover {
+  background-color: #1fb6ff;
+}
+
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #111827;
+    padding: 1rem;
+    position: absolute;
+    right: 2rem;
+    top: 70px;
+    z-index: 10;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .tables-container {
+    flex-direction: column; 
+    gap: 1rem;
+  }
+
+  .user-table {
+    width: 100%;
+  }
+}
