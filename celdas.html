@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Celdas - Calamity Parking</title>
+  <link rel="stylesheet" href="css/celdas.css" />
+</head>
+<body>
+  <video autoplay muted loop id="videoFondo">
+    <source src="video/celdas.mp4" type="video/mp4" />
+  </video>
+
+  <div class="navbar">
+    <div class="logo">Calamity Parking</div>
+    <div class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="manual de uso.html">Manual</a>
+    </div>
+  </div>
+
+  <div class="contenedor-general">
+    <h1>Celdas</h1>
+
+    <div class="slot" id="slotA">
+      <h2>Slot A</h2>
+      <div class="grupo">
+        <h3>Carros</h3>
+        <div class="celdas" data-tipo="carro" data-zona="A"></div>
+      </div>
+      <div class="grupo">
+        <h3>Motos</h3>
+        <div class="celdas" data-tipo="moto" data-zona="A"></div>
+      </div>
+    </div>
+
+    <div class="slot" id="slotB">
+      <h2>Slot B</h2>
+      <div class="grupo">
+        <h3>Carros</h3>
+        <div class="celdas" data-tipo="carro" data-zona="B"></div>
+      </div>
+      <div class="grupo">
+        <h3>Motos</h3>
+        <div class="celdas" data-tipo="moto" data-zona="B"></div>
+      </div>
+    </div>
+
+    <div class="slot" id="slotC">
+      <h2>Slot C</h2>
+      <div class="grupo">
+        <h3>Carros</h3>
+        <div class="celdas" data-tipo="carro" data-zona="C"></div>
+      </div>
+      <div class="grupo">
+        <h3>Motos</h3>
+        <div class="celdas" data-tipo="moto" data-zona="C"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/celdas.js"></script>
+</body>
+</html>
+
+

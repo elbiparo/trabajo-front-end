@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  color: #00f0ff;
+  background: #000;
+}
+
+#videoFondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.2);
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00f0ff;
+}
+
+.menu a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #00f0ff;
+  font-size: 16px;
+}
+
+.menu a:hover {
+  color: #fff;
+}
+
+.contenedor-general {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  border: 1px solid #00f0ff;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.slot {
+  margin-bottom: 60px;
+}
+
+.celdas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+  gap: 8px;
+  margin: 10px auto 30px;
+  max-width: 800px;
+}
+
+.celda {
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: #00ff55;
+  border: 2px solid #00f0ff;
+  border-radius: 4px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.celda.ocupada {
+  background-color: #ff0033;
+  border-color: #ff0077;
+}
+
+.celda:hover {
+  transform: scale(1.1);
+}
